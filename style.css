@@ -1,7 +1,9 @@
 :root {
     --cor-primaria: #0a243e;
+    --cor-destaque: #e74c3c;
     --cor-texto: #333;
     --cor-clara: #f9f9f9;
+    --sombra: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -9,16 +11,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
     color: var(--cor-texto)
 }
+
 .cabecalho {
     background-color: var(--cor-primaria);
     color: var(--cor-clara);
     padding: 1rem 0;
 }
+
 .logo {
     width: 150px;
 }
@@ -66,11 +71,56 @@ body {
 
 .video-container video {
     width: 100%;
-    height: 90%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.container {
-    text-align: center;
+.overlay { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner .container {
+    max-width: 600px;
+    text-align: left;
+}
+
+.sobre {
+    padding: 4rem 0;
+}
+
+.sobre-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.sobre-conteudo img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: var(--sombra);
+}
+
+.sobre-conteudo ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.sobre-conteudo li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.sobre-texto li::before {
+    content: '•';
+    color: var(--cor-destaque);
+    position: absolute;
+    left: 0;
 }
