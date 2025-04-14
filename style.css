@@ -124,3 +124,90 @@ body {
     position: absolute;
     left: 0;
 }
+
+.conteudo {
+    padding: 4rem 0;
+    background-color: rgb(251, 246, 246);
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.topico h3 {
+    font-size: 1.8rem;
+}
+
+.topicos {
+    gap: 1.5rem;
+}
+
+.topico {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--sombra);
+}
+
+.topico p {
+    margin-top: 50px;
+    padding-left: 50px;
+}
+
+.galeria .container h2 {
+    font-size: 2.5rem;
+    margin-top: 1em;
+    margin-bottom: -0.1em;
+}
+
+.grid-imagens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-imagens img {
+    width: 500px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: var(--sombra);
+}
+
+.sobre .container h2 {
+    font-size: 2.5rem;
+}
+
+.rodape {
+    background-color: var(--cor-primaria);
+    height: 350px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    padding: 20px;
+}
+
+.skill-coluna a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--cor-clara);
+}
+
+.skill-coluna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-coluna li {
+    margin-bottom: 12px;
+}
